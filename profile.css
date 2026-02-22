@@ -1,0 +1,69 @@
+@charset "UTF-8"
+
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+
+#container {width : 100%; height: 100vh; background: white; position: fixed; top: 0; left: 0; z-index: 10000; }
+
+body {margin: 0px; padding: 0px;}
+
+#page_cover {width : 100%; height: 100vh; display: flex; justify-content: center; align-items: center;
+background: rgb(225,0,255); box-sizing: border-box;
+background: linear-gradient(90deg, rgba(225,0,255,0.15449929971988796) 0%, rgba(127,0,255,0.14889705882352944) 35%);
+position: fixed; top: 0; left: 0; z-index: 10000;}
+
+#profile_box {width : 300px; height: auto; background-color: white; box-shadow: 0px 0px 10px #ccc; border-radius: 15px;
+padding: 50px 25px; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+
+#profile_pic {width : 150px; height: 150px; border-radius: 50%; border: 5px solid white; box-shadow: 0px 0px 10px #ccc;
+position: relative; overflow: hidden;}
+
+#profile_icon {font-size: 120px; color: #ccc; position: absolute; top : 20px; left: 50%; transform: translate(-50%);}
+
+#profile_upload {width: 140px; height: 140px; position: absolute; top : 0px; left: 0px; border-radius: 50%;
+opacity: 0;}
+
+#upp {font-size: 23px; color: gray; font-family: 'Ubuntu', sans-serif; margin-top: 15px; margin-bottom: 10px;}
+
+#profile_name {font-family: 'Ubuntu', sans-serif;}
+
+#next {width: 100%; padding: 10px; border: none; font-size: 16px; box-sizing: border-box;
+background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white; font-family: 'Ubuntu', sans-serif; outline: none; cursor: pointer; margin-top: 20px; display: none;}
+
+
+/*main profile page coding*/
+
+#main_profile_page {width: 100%; height: auto;}
+
+body {background: rgb(225,0,255); background: linear-gradient(90deg, rgba(225,0,255,0.15449929971988796) 0%, rgba(127,0,255,0.14889705882352944) 35%);}
+
+#profile_header {width : 100%; height: 150px; background-image: url("flower.jpg"); background-size: cover;
+background-position: top;}
+
+#profile_picture {width: 150px; height: 150px; background-color: purple; border-radius: 50%; border: 5px solid white;
+box-shadow: 0px 0px 10px #ccc; position: absolute; left: 50%; transform: translate(-50%); top : 80px;}
+
+#profile_username {text-align: center; margin-top: 100px; font-family: 'Ubuntu', sans-serif;}
+
+#app {width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; margin-bottom: 20px;}
+
+@media (max-width : 576px)
+{ #app {flex-direction: column; height: 100%;} }
+
+#contact,#player,#logout {width: 180px; height: 150px; background-color: white; margin: 20px; border-radius:15px;
+display: flex; justify-content: center; align-items: center; flex-direction: column;}
+
+#contact:hover, #player:hover, #logout:hover {width: 200px; height: 170px; box-shadow: 0px 0px 15px #ccc;transition: 0.5s;
+cursor: pointer;}
+
+#contact i, #player i, #logout i {font-size: 45px; color: purple;}
+
+#contact p, #player p, #logout p {font-size: 25px; color: purple; font-family: 'Ubuntu', sans-serif; margin-top: 7px;}
+
+#profile_footer {width: 100%; height: 70px; background-color: purple; display: flex; justify-content: center; 
+align-items: center;}
+
+#profile_footer p {color: white; font-family:'Ubuntu', sans-serif; font-size: 20px;}
+

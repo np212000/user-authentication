@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>
+Contact Apllication	
+</title>	
+	<meta charset="utf-8">
+	<meta lang="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="contact.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	
+</head>
+<body>
+
+<div id="profile_box">
+	
+<div id="profile_pic"></div>
+
+
+
+</div>
+
+<i class = "fas fa-plus-circle" id = "new_contact"></i>
+
+<div id="main_all_contact_box">
+	
+<div id="contact_header">
+
+<h1><i class = "fas fa-user-circle"></i>All Contacts</h1>
+<input type="search" placeholder="Search your Contact here" id = "search">	
+</div>
+
+<div id="all_contact_box">
+	
+</div>
+
+</div>
+
+
+
+
+
+<!--start add contact popup box coding-->
+
+<center>
+<div id="contact_bg" class = "animate__animated animate__fadeIn">
+
+<div id="add_contact_box" class = "animate__animated animate__slideInDown">
+<h1 id = "c_heading">Add New Contact</h1>
+
+<form>	
+
+<input type = "text" placeholder = "Enter Name" id = "c_name">	
+<input type = "number" placeholder = "Enter Mobaile number" id = "c_number">
+<small id = "contact_notice">Please Enter Name & Phone Number</small>
+
+<button type = "submit" id = "add">Add</button>
+<button type = "button" id = "close">Close</button>
+</form>
+</div>
+
+</div>
+
+</center>
+
+<!--end add contact popup box coding-->
+
+<script type="text/javascript" src = "contact.js"></script>
+
+</body>
+</html>

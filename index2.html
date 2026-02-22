@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>
+Web Application Development 	
+</title>
+
+	<meta charset="utf-8">
+	<meta lang = "eng-US">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href = "index2.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+</head>
+<body>
+
+<div id="container">
+
+<div id="page">
+
+<div id="login" class = "animate__animated animate__flipInY">
+
+<h1 align = "center">Login</h1>	
+
+<form id = "login_frm" autocomplete = "off">
+	
+<input type = "email" name = "email" placeholder = "Email Id" id = "login_email" required = "required">
+<small id = "login_email_war"><i class="fas fa-exclamation-triangle"></i> Email id not registered....</small>
+
+<input type = "password" name = "password" placeholder = "Password" id = "login_password" autocomplete = "autocomplete"
+required = "required"><small id = "login_password_war"><i class="fas fa-exclamation-triangle"></i> Wrong Password...</small>
+
+<button type = "submit" id = "login_btn">Login</button>	
+</form>
+
+<p>Don't have a Account ? <span id = "span_one" onclick = "ponda()">Sing Up</span></p>
+
+</div>
+
+<div id="signup" class = "animate__animated animate__flipInY">
+
+<h1 align = "center">Sign-Up</h1>	
+
+<form id = "signup_frm" autocomplete = "off">
+	
+<input type = "text" name = "username" id = "username" placeholder = "Name" required = "required" autocomplete = "off">
+
+<input type = "email" name = "email" placeholder = "email" id = "email" required = "required" autocomplete = "off">
+<small id = "email_notice"><i class="fas fa-exclamation-triangle"></i>
+Email id Alredy Exist</small>
+
+<input type = "number" name = "no" placeholder = "Phone" id = "phone" required = "required" autocomplete = "off">
+
+<input type = "password" name = "password" placeholder = "Password" id = "password" required = "required" 
+autocomplete = "off"><small id = "pass_war"><i class="fas fa-exclamation-triangle"></i>
+Password Should have 8 Character</small>
+
+<button type = "submit" id = "signup_btn">Sign-Up</button>	
+
+</form>
+
+<p>Already have a Account ? <span id = "span_two" onclick = "np()">Login</span></p>
+
+</div>
+
+</div>	
+
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src = "index2.js"></script>
+<script type="text/javascript" src = "logic.js"></script>
+
+
+</body>
+</html>

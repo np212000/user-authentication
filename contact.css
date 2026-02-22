@@ -1,0 +1,122 @@
+@charset "UTF-8"
+
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+
+body {background: rgb(225,0,255); box-sizing: border-box;
+background: linear-gradient(90deg, rgba(225,0,255,0.15449929971988796) 0%, rgba(127,0,255,0.14889705882352944) 35%);
+margin: 0px; padding: 0px;}
+
+#profile_box {width: 150px; height: 150px; background-color: purple; border: 5px solid black; border-radius: 50%;
+display: flex; justify-content: center; align-items: center; position: fixed; top : 0; left: 0;}
+
+#profile_pic {width : 100px; height: 100px; border: 4px solid white; box-shadow: 0px 0px 10px #ccc; border-radius: 50%;}
+
+#new_contact {position: fixed; font-size: 50px; right: 50px; bottom: 50px; color: purple; cursor: pointer;}
+
+
+/*start contact number coding*/
+
+#main_all_contact_box {width : 35%; height: 100vh; margin: 0 auto;}
+
+#contact_header {width: 100%; height: 150px;}
+
+#contact_header h1 {text-align: center; font-family: 'Ubuntu', sans-serif; font-size: 40px; }
+
+#search {width: 100%; padding: 5px; font-size: 20px; font-family: 'Ubuntu', sans-serif; border: none; outline: none;
+border-bottom: 1px solid black; background-color: inherit; padding-left: 3px; }
+
+#all_contact_box {width: 100%; height: 70%; padding: 10px; overflow-y: scroll; overflow-x : hidden;}
+
+#all_contact_box::-webkit-scrollbar {width: 5px;}
+
+#all_contact_box::-webkit-scrollbar-track {background-color: inherit;}
+
+#all_contact_box::-webkit-scrollbar-thumb {background-color: purple; border-radius: 15px;}
+
+#contact {width: 100%; height: auto; background: white; border-radius: 15px; padding: 15px; box-shadow: 0px 0px 10px #ccc;
+margin: 10px 0;}
+
+#contact p {font-size:  20px; font-family: 'Ubuntu', sans-serif; margin: 5 0;}
+
+#contact i {font-size: 20px; margin: 10px;}
+
+#tool {width: 25%; float: right; margin-top: -15px;}
+
+#tool i {font-size: 20px; margin: 10px;}
+
+body::-webkit-scrollbar {width: 5px;}
+
+body::-webkit-scrollbar-track {background-color: inherit;}
+
+body::-webkit-scrollbar-thumb {background-color: purple; border-radius: 15px;}
+
+
+
+/*end contact number coding*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*start add contact popup coding*/
+
+#contact_bg {width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.7); position: absolute; top: 0; left: 0; 
+display: none;}
+
+#add_contact_box {width: 35%; height: auto; background: white; box-shadow: 0px 0px 10px #ccc; border-radius: 15px;
+padding: 30px; margin-top: 150px;}
+
+#add_contact_box h1 {text-align: center; color: purple; font-family: 'Ubuntu', sans-serif;  margin-bottom: 10px;}
+
+#c_name,#c_number {width: 100%; padding: 10px; font-family: 'Ubuntu', sans-serif; font-size: 20px; border: none;
+border: 1px solid purple; border-left: 5px solid purple; margin-top: 10px; margin-bottom: 10px; outline: none;}
+
+#add, #close {width: 100px; padding: 10px; background-color: purple; border: none; font-family: 'Ubuntu', sans-serif;
+color: white; font-size: 20px; outline: none; margin-top: 10px;}
+
+#contact_notice {color: red; font-size: 15px; font-family: 'Ubuntu', sans-serif; display: flex; flex-direction: column;
+display: none;}
+
+/*end add contact popup coding*/
+
+
+/* start all screen responsive coding*/
+
+@media (max-width : 1025px)
+{
+	#tool {margin-top: -40px; width: 50px;}
+
+	#contact {width : 90%;}
+}
+
+@media (max-width : 769px)
+{
+	#main_all_contact_box {width : 50%;}
+
+
+	#add_contact_box {width: 50%;}
+}
+
+
+@media (max-width : 568px)
+{
+	#main_all_contact_box {width : 100%;}
+
+	#profile_box {display: none;}
+
+	#new_contact {bottom: 20px; rigth: 20px;}
+
+	#add_contact_box {width: 80%;}
+}
+
+
+
+/* end all screen responsive coding*/
